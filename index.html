@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Tiya">
+    <title>tya</title>
+    <link href="public/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-container">
+                <div class="left-up">
+                    <div class="logo">
+                        <a>
+                            <img src="public/image/logo.png">
+                            <span>Tiya
+                                <small>
+                                    Golf club
+                                </small>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-up">
+                    <div class="menu-accsess">
+                        <button id="menuButton" onclick="changecolor()" class="menoulist">
+                            <span class="menu-icon" id="menu-icon">
+
+                            </span>
+                        </button>
+                        <div id="list" class="list">
+                            <ul class="menu-header">
+                                <li>
+                                    <a class="active" href="#home">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#Events">Events</a>
+                                </li>
+                                <li>
+                                    <a href="#Membership">Membership</a>
+                                </li>
+
+                                <li>
+                                    <a href="#contact-us">contact us</a>
+
+                                </li>
+                                <li>
+                                    <a href="#about">About us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-btn">
+                    <button class="btn-container">
+                        Member Login
+                    </button>
+                </div>
+
+            </div>
+            </div>
+        </nav>
+        <div class="h-container">
+            <div class="section-1">
+                <svg class="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#3D405B" fill-opacity="1"
+                        d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
+                    </path>
+                </svg>
+                <div class="section-2">
+                    <div class="content">
+                        <div class="left-cont">
+                            <diV class=" about-club">
+                                <p class="text-white">Welcome to the club</p>
+                                <h1 class="cd-headline">Tiya is
+                                    <span class="cd-words-wrapper" style="width: 168px;">
+                                        <b id="n1" class="is-visible">Modern</b>
+                                        <b id="n2" class="is-hidden">Creative</b>
+                                        <b id="n3" class="is-hidden">Lifestyle</b>
+                                    </span>
+                                </h1>
+                            </diV>
+                            <div class="story">
+                                <button class="story-btn">
+                                    our story
+                                </button>
+                                <span style="  padding: 0 9px;
+                                cursor: pointer;">
+                                    <a class="link-story">
+                                        Become a member
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="right-cont">
+                            <div class="video-box">
+                                <video class="video-cotainer" id="video-playe" controls autoplay>
+                                    <source src="public/video/aa.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style=" margin-top: 440px;">
+                            <path fill="#ffffff" fill-opacity="1"
+                                d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="about-tiya">
+            <div class="tittle">
+                <h3 style="    font-size: 29px;
+                text-align: center; " id="about">About Tiya</h3>
+            </div>
+            <div class="container-tiya">
+                <div class="left">
+                    <h4 style="  font-size: 24px;  margin-bottom: 20px;">Tiya Club History</h4>
+                    <p style="font-size: 19px; color: gray;">
+                        <strong>Since 1984</strong> , Tiya is ranked #8 in the top 10 golf courses in the world.
+                        Tiya is
+                        Bootstrap 5 HTML
+                        CSS template for golf clubs. Anyone can modify and use this layout for commercial
+                        purposes.<br>
+                        <br>
+                        Tiya Golf Club is 100% free CSS template provided by TemplateMo website. Please tell your
+                        friends about our website. Thank you for visiting.
+                    </p>
+                </div>
+                <div style="width: 55%;height: 100%;  display: flex; padding: 25px 20px;">
+                    <div class="member1">
+                        <div class="m-img">
+                            <img style="width: 253px; border-radius: 20px; "
+                                src="public/image/successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg">
+                            <ul class="social-icon">
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-twitter">
+                                        <i class="fa fa-twitter " style="color:#fff;"></i>
+                                    </a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-whatsapp">
+                                        <i class="fa fa-whatsapp" style="color:#fff;"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="display: flex; flex-direction: row;padding: 12px; width: 100%;
+                        height: 49px;">
+                            <h4 style="    margin-right: 39%;
+                            font-size: 21px;">
+                                Michael
+                            </h4>
+                            <p style="color: gray; font-size: 17px;">
+                                Founder
+                            </p>
+                        </div>
+                    </div>
+                    <div class="member2" style="margin-left: 20px;">
+                        <div class="m-img">
+                            <img style="width:253px ; margin-left: 10px; border-radius: 20px;"
+                                src="public/image/portrait-young-handsome-businessman-wearing-suit-standing-with-crossed-arms-with-isolated-studio-white-background.jpg">
+                            <ul class="social-icon">
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-twitter">
+                                        <i class="fa fa-twitter " style="color:#fff;"></i>
+                                    </a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-whatsapp">
+                                        <i class="fa fa-whatsapp" style="color:#fff;"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+
+                        <div style="display: flex; flex-direction: row; padding: 12px;     width: 100%;
+                        height: 49px;">
+                            <h4 style="     margin-right: 39%;
+                            font-size: 21px;">
+                                Sandy
+                            </h4>
+                            <p style="color: gray; font-size: 13px;">
+                                co-founder
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="section-3">
+            <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z"
+                    stroke-width="0">
+                </path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)"
+                    d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z"
+                    stroke-width="0"></path>
+            </svg>
+            <div class="newsletter-cont">
+                <div style="width: 100%; padding: 20px; height: 137px;">
+                    <h3 style="font-size: 27px; margin-bottom: 15px;">Get our newsletter</h3>
+                    <p style="color: gray; line-height: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod
+                        tempor
+                        ut labore et
+                        dolore.</p>
+                </div>
+                <div class="input-group ">
+                    <span class="input-group-text bi-envelope" id="basic-addon1">
+
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M448 64H64C28.65 64 0 92.65 0 128v256c0 35.35 28.65 64 64 64h384c35.35 0 64-28.65 64-64V128C512 92.65 483.3 64 448 64zM496 384c0 26.47-21.53 48-48 48H64c-26.47 0-48-21.53-48-48V175.1l206.5 165.2C232 347.8 243.9 352 256 352s24-4.188 33.5-11.77L496 175.1V384zM496 154.6l-216.5 173.2c-13.31 10.66-33.69 10.66-47 0L16 154.6V128c0-26.47 21.53-48 48-48h384c26.47 0 48 21.53 48 48V154.6z" />
+                    </svg>
+                    <input type="email" class="email-input" name="email" id="email" pattern="[^ @]*@[^ @]*"
+                        class="form-control" placeholder="Email address" required="">
+
+                    <button type="submit" class="form-control-1">Subscribe</button>
+                </div>
+            </div>
+            <svg class="svg2" style="       transform: rotate(180deg);
+            /* position: relative; */
+            bottom: -1px;
+            margin-top: 18px;
+            margin-right: 0px;" viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z"
+                    stroke-width="0">
+                </path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z"
+                    stroke-width="0">
+                </path>
+                <path fill="rgba(255, 255, 255, 1)"
+                    d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z"
+                    stroke-width="0">
+                </path>
+            </svg>
+        </div>
+        <div class="section-4">
+            <div clss="tittle" style="    width: 24%;
+            height: 40px;">
+                <h3 style="font-size: 29px;"> Membership at Tiya</h3>
+            </div>
+            <div class="Memberships" id="Membership">
+                <div class="left-cont">
+                    <h4 style="padding: 18px; font-size: 22px;">Membership Fees</h4>
+                    <table class="table">
+                        <thead>
+                            <tr style="background-color:  rgb(61, 64, 91); color: white; border: 0;">
+
+                                <th style="width: 34%; padding: 22px 16px !important; border: 0;">Yearly
+                                    Access</th>
+                                <th style="width: 22%;">T1 $420</th>
+                                <th style="width: 22%;">T2 $640</th>
+                                <th style="width: 22%;">T3 $860</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="fard">
+                                <th scope="row" class="text-start">Golf Insurance</th>
+
+                                <td>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check-circle-fill __web-inspector-hide-shortcut__"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
+                                        </path>
+                                    </svg>
+                                </td>
+                                <td>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check-circle-fill __web-inspector-hide-shortcut__"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
+                                        </path>
+                                    </svg>
+                                </td>
+                                <td>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check-circle-fill __web-inspector-hide-shortcut__"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
+                                        </path>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr class="zoj">
+                                <th scope="row" class="text-start">Club Facilities</th>
+                                <td>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check-circle-fill __web-inspector-hide-shortcut__"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
+                                        </path>
+                                    </svg>
+                                </td>
+                                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check-circle-fill __web-inspector-hide-shortcut__"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
+                                        </path>
+                                    </svg></td>
+                                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check-circle-fill __web-inspector-hide-shortcut__"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
+                                        </path>
+                                    </svg></td>
+
+                            </tr>
+                            <tr class="fard">
+                                <th scope="row" class="text-start">Country Club</th>
+                                <td>
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-x-circle-fill">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+                                    </svg>
+                                </td>
+                                <td>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check-circle-fill __web-inspector-hide-shortcut__"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
+                                        </path>
+                                    </svg>
+                                </td>
+                                <td>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check-circle-fill __web-inspector-hide-shortcut__"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
+                                        </path>
+                                    </svg>
+                                </td>
+                            </tr>
+
+                            <tr class="zoj">
+                                <th scope="row" class="text-start">Weekend Seasonal</th>
+                                <td><svg width="16px" height="16px" viewBox="0 0 16 16"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-x-circle-fill">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+                                    </svg></td>
+                                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check-circle-fill __web-inspector-hide-shortcut__"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
+                                        </path>
+                                    </svg></td>
+                                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check-circle-fill __web-inspector-hide-shortcut__"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
+                                        </path>
+                                    </svg></td>
+                            </tr>
+                            <tr class="fard">
+                                <th scope="row" class="text-start">Premium Courses</th>
+                                <td><svg width="16px" height="16px" viewBox="0 0 16 16"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-x-circle-fill">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+                                    </svg></td>
+                                <td>
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-x-circle-fill">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+                                    </svg>
+                                </td>
+                                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check-circle-fill __web-inspector-hide-shortcut__"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
+                                        </path>
+                                    </svg></td>
+
+                            </tr>
+                            <tr class="zoj">
+                                <th scope="row" class="text-start">Pro's Networking</th>
+
+                                <td><svg width="16px" height="16px" viewBox="0 0 16 16"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-x-circle-fill">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+                                    </svg></td>
+                                <td>
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-x-circle-fill">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+                                    </svg>
+                                </td>
+                                <td>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check-circle-fill __web-inspector-hide-shortcut__"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
+                                        </path>
+                                    </svg>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="right-cont4">
+
+                    <h4 style="padding: 18px; font-size: 22px;">
+                        Please join us!</h4>
+
+                    <div class="form-contant">
+
+                        <form>
+                            <h4 style="    padding: 17px 0;
+                                font-size: 24px;
+                                margin-right: 179px;">Become a member</h4>
+                            <input type="text" name="full-name" id="full-name" class="form-control"
+                                placeholder="Full Name" required="">
+                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
+                                placeholder="Email address" required="">
+                            <textarea id="message" name="message" placeholder="comments" class="massage"></textarea>
+                            <button type="submit" class="submit">
+                                submit
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Events" id="Events">
+            <div class="tittle" style=" padding-left: 180px; text-align: start; font-size: 30px; 
+                height: 12%;
+                ">
+                Upcoming Events
+            </div>
+            <div class="card-1">
+                <div class="card1-cont">
+                    <div class="date">
+                        <h6 style="    padding-left: 24px;
+                            padding-bottom: 12px;
+                            font-size: 40px;">24</h6>
+                        <strong style=" 
+                            font-size: 12px;  color: white; padding: 10px;"> feb 2048</strong>
+                    </div>
+                    <div class="image">
+                        <img src="public/image/professional-golf-player.jpg" style=" border-radius: 20px;     width: 321px;
+                                height: 92%;">
+                        <a href="file:///F:/project/detail.html">
+                            <i class=" fa fa-link"></i>
+                        </a>
+
+
+                    </div>
+                </div>
+                <div style=" width: 59%; height:auto ;">
+                    <div class="card1-decsribtion">
+                        <div style=" border-bottom: 1px solid gray; width: 100%; height: auto;">
+                            <div style="    width: 100%;
+                            height: 46px;">
+                                <a style="    font-size: 25px;
+                                    text-decoration: none;
+                                    color: black;
+                                   ">Private activities</a>
+                            </div>
+                            <p style="
+                                    line-height: 29px; color: gray; font-size: 17px; padding-bottom: 5px;
+                                ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div style="display: flex;  padding: 10px 0 ;     height: 74px;
+                        width: 100%;">
+                            <div style="width: 73%;">
+                                <div style="display: flex;  width: 100%;
+                                        height: 50%;">
+                                    <div>
+
+                                        <span>
+                                            location:
+                                        </span>
+                                    </div>
+                                    <div style="    margin-left: 36px;">
+                                        <p style="color: gray; font-size: 18px;">
+                                            National Center, NYC
+                                        </p>
+                                    </div>
+                                </div>
+                                <div style="display: flex; flex-direction: row;  width: 100%;
+                                        height: 50%;">
+                                    <div>
+                                        <span style="font-weight: 700px;">
+                                            Ticket:
+                                        </span>
+                                    </div>
+                                    <div style="margin-left: 46px;">
+                                        <p style="color: gray; font-size: 18px;">
+                                            $250
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="ticket-btn">
+                                    buy ticket
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-2">
+                <div class="card2-cont">
+                    <div class="date-card">
+                        <h6 style="    padding-left: 24px;
+                            padding-bottom: 12px;
+                            font-size: 40px; ">24</h6>
+                        <strong style=" 
+                            font-weight: bold; font-size: 11px;  color: white; padding: 10px;"> feb 2048</strong>
+                    </div>
+                    <div class="image">
+                        <img src="public/image/girl-taking-selfie-with-friends-golf-field.jpg" style=" border-radius: 20px;     width: 308px;
+                      height: 97%;">
+                        <a href="file:///F:/project/detail.html">
+                            <i class=" fa fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card2-describtion">
+                    <div class="paragraph">
+                        <div style="   width: 100%; height: 152px; border-bottom: 1px solid gray;">
+                            <div style="    width: 100%;
+                            height: 56px;">
+                                <a style="    font-size: 25px;
+                                    text-decoration: none;
+                                    color: black;
+                                ">Private activities</a>
+                            </div>
+                            <p style=" line-height: 25px; color: gray; font-size: 17px;
+                                ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div style="display: flex; flex-direction: row; padding: 10px 0 ;">
+                            <div style="width: 73%;">
+                                <div style="display: flex;width: 100%;
+                                        height: 50%;">
+                                    <div>
+
+                                        <span>
+                                            location:
+                                        </span>
+                                    </div>
+                                    <div style="    margin-left: 36px;">
+                                        <p style="color: gray; font-size: 18px;">
+                                            National Center, NYC
+                                        </p>
+                                    </div>
+                                </div>
+                                <div style="display: flex; flex-direction: row;  width: 100%;
+                                        height: 50%;">
+                                    <div>
+                                        <span>
+                                            Ticket:
+                                        </span>
+                                    </div>
+                                    <div style="margin-left: 46px;">
+                                        <p style="color: gray; font-size: 18px;">
+
+                                            $350
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="ticket-btn">
+                                    buy ticket
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-taya" id="contact-us">
+            <div class="contact-form" style="width: 50%; height: 100%;">
+                <div style="width: 100%;
+                height: 100%;">
+                    <div style="width: 90%;
+                    height: 37px;
+                            font-size: 28px;
+                            padding: 7px 111px;">
+                        Contact Tiya
+                    </div>
+                    <form style="padding: 20px ;">
+                        <div class="thisone">
+                            <div class="right">
+                                <input style="width: 96%;     border: solid 1px gray;" type="text" name="full-name"
+                                    id="full-name" class="form-control" placeholder="Full Name" required="">
+                            </div>
+                            <div class="left">
+                                <input style="width:64%;   border: solid 1px gray;" type="email" name="email" id="email"
+                                    pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address"
+                                    required="">
+                            </div>
+                        </div>
+                        <div class="thistwo">
+                            <textarea class="form-control" id="message" name="message"
+                                placeholder="Describe message here"
+                                style="width: 65%; height: 116px; border: solid 1px gray;"></textarea>
+                        </div>
+                        <button type="submit" class="form-btn">Submit Form</button>
+                    </form>
+                </div>
+            </div>
+            <div class="contact-right">
+                <div class="contact-info">
+                    <div class="contact-info-body">
+                        <strong>London, United Kingdom</strong>
+
+                        <p style="padding: 12px;">
+                            <a href="tel: 010-020-0340" class="contact-link">
+                                (020)
+                                010-020-0340
+                            </a>
+                        </p>
+
+                        <p>
+                            <a href="mailto:info@company.com" class="contact-link">
+                                info@company.com
+                            </a>
+                        </p>
+                    </div>
+                    <div class="contact-info-footer">
+                        <a href="#">Directions</a>
+                    </div>
+                </div>
+
+                <img src="WorldMap.svg" class="img-fluid" alt="" style="width: 500PX; 
+                height: auto;
+                        ">
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="f-content">
+            <div class="right">
+                <div class="logo2">
+                    <a>
+                        <img src="public/image/logo.png" style="width: 50px; height: 50px;">
+                        <span style="color: black;">Tiya
+                            <small>
+                                Golf club
+                            </small>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="left">
+                <div class="join-us">
+                    <h5 class="site-footer-title mb-4" style="padding: 20px 0; font-size: 20px;">Join Us</h5>
+
+                    <p style="border-bottom: 1px solid gray;padding-bottom: 17px; color: gray;">
+                        <span>Mon-Fri</span>
+                        <span class="f-date">6:00 AM - 6:00 PM</span>
+                    </p>
+
+                    <p style="padding-top: 10px;  color: gray;">
+                        <span>Sat-Sun</span>
+                        <span class="f-date">6:30 AM - 8:30 PM</span>
+                    </p>
+                    <br>
+                    <p class="copyright-text" style="padding-top: 20px;  color: gray;">Copyright © 2048 Tiya Golf Club
+                    </p>
+                </div>
+                <div class="icon" style="width: 205px;
+                padding: 104px 80px;
+                height: 50px;">
+                    <ul style="list-style-type: none; display: flex;">
+                        <li>
+                            <i class="fa fa-twitter" style="padding: 0 10px; 
+                    color: white;
+                            margin: 10px;
+                            width: 33px;
+                            background-color: black;
+                            margin: 10px;
+                            border-radius: 97%;
+                            height: 25px;
+                            padding: 5px 10px;"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-instagram" style="padding: 0 10px; 
+                            color: white;
+                                    margin: 10px;
+                                    width: 33px;
+                                    background-color: black;
+                                    margin: 10px;
+                                    border-radius: 97%;
+                                    height: 25px;
+                                    padding: 5px 10px;">
+                            </i>
+                        </li>
+                        <li>
+                            <i class="fa fa-whatsapp" style="padding: 0 10px; 
+                            color: white;
+                                    margin: 10px;
+                                    width: 33px;
+                                    background-color: black;
+                                    margin: 10px;
+                                    border-radius: 97%;
+                                    height: 25px;
+                                    padding: 5px 10px;">
+
+                            </i>
+                        </li>
+                    </ul>
+                    <p class="copyright-text">Design: <a style="color: black;" rel="nofollow"
+                            href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#81B29A" fill-opacity="1"
+            d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+        </path>
+    </svg>
+</body>
+<script src="public/js/index.js">
+
+
+</script>
+
+</html>

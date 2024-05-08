@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+    }
+
+    main {
+        width: 100%;
+        height: 600vh;
+        position: relative;
+        display: contents;
+    }
+
+
+    .fd {
+        top: 6%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        margin-bottom: -70px;
+
+        width: 100%;
+        height: 598px;
+        background-image: url(frederik-rosar-NDSZcCfnsbY-unsplash.jpg);
+    }
+
+    .nav-bar {
+        width: 100%;
+        height: 85px;
+        z-index: 99;
+        position: fixed;
+        background: transparent;
+        background-color: #3a3e5a;
+    }
+
+    .section svg {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -59px;
+
+    }
+
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .menu-acses {
+        width: 100%;
+        height: 100%;
+    }
+
+    .login-btn {
+        width: auto;
+        height: auto;
+        padding: 24px 0;
+        margin-left: 63px;
+    }
+
+    .btn-logoo:hover {
+        background-color: #F2CC8F;
+        color: white;
+    }
+
+    .logo {
+        margin-right: 202px;
+        width: auto;
+        height: auto;
+        padding: 26px 0;
+    }
+
+    .menu-header {
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        color: white;
+
+    }
+
+    .menu-header li {
+        box-sizing: border-box;
+        padding: 10px 17px;
+        font-size: 17px;
+        box-sizing: border-box;
+        position: relative;
+        color: white;
+    }
+
+    .date-card {
+        height: 115px;
+        padding: 25px;
+        border-radius: 14px;
+        background-color: #81B29A;
+        width: 13%;
+        margin: 14px 30px;
+    }
+
+    .logo img {
+        width: 52px;
+        height: auto;
+    }
+
+
+    .btn-logoo {
+        width: 150px;
+        border-radius: 19px;
+        padding: 13px 0;
+        background-color: none;
+        background-color: unset;
+
+        border: 2px solid #F2CC8F;
+        color: #F2CC8F;
+
+    }
+
+    .logo span {
+        font-family: Arial;
+        font-size: 21px;
+        line-height: normal;
+        margin-left: 55px;
+        position: relative;
+        bottom: 54px;
+        color: white;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .logo2 span {
+        font-family: Arial;
+        font-size: 21px;
+        line-height: normal;
+        margin-left: 55px;
+        position: relative;
+        bottom: 54px;
+        color: white;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .logo small {
+        font-size: 10px;
+        line-height: 1;
+        text-transform: uppercase;
+
+    }
+
+
+    .logo2 small {
+        font-size: 10px;
+        line-height: 1;
+        text-transform: uppercase;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: Arial;
+    }
+
+    a:hover {
+        color: #F2CC8F;
+    }
+
+    .active {
+        color: #F2CC8F;
+    }
+
+    .right-up {
+        margin-top: 2%;
+        display: flex;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-menu {
+        border-radius: 10px;
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        list-style-type: none;
+        font-size: 30px;
+        width: 137px;
+        flex-direction: column;
+    }
+
+    .dropdown-menu a {
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-men li {
+        padding: 2px 0;
+    }
+
+    .section {
+        width: 100%;
+        height: 450px;
+        background-image:
+            linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("anna-rosar-ZxFyVBHMK-c-unsplash.jpg");
+        background-size: 100% 400px;
+        background-repeat: no-repeat;
+        background-color: #2d2d50;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        padding-bottom: 100px;
+        height: 100vh;
+        min-height: 670px;
+        margin-bottom: -90px;
+        box-sizing: border-box;
+    }
+
+    .section .container+svg {
+        top: auto;
+        bottom: -1px;
+    }
+
+    .section>svg {
+        top: 0;
+    }
+
+    .section svg {
+        position: absolute;
+        right: 0;
+        left: 0;
+    }
+
+    .logo img {
+        filter: brightness(0) invert(1);
+        filter: brightness(0) invert(1);
+    }
+
+    svg {
+        vertical-align: middle;
+
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        padding: 13% 8%;
+    }
+
+    .sec {
+        content: "";
+        background: rgba(0, 0, 0, 0) linear-gradient(rgba(39, 48, 83, 0.01) 0%, rgb(39, 48, 83) 100%) repeat scroll 0% 0%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    h2 {
+        color: white;
+        font-size: 40px;
+    }
+
+    .story-btn {
+        font-size: 14px;
+        width: 99px;
+        height: 40px;
+        color: white;
+        background-color: #F2CC8F;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-right: 10px;
+
+    }
+
+    .contact-info-footer {
+        padding: 10px 20px;
+        background-color: #E07A5F;
+        transition: all 0.3s;
+    }
+
+    .contact-info-footer:hover {
+        background-color: #F2CC8F;
+    }
+
+
+    footer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    footer .container {
+        width: 100%;
+        height: 300px;
+    }
+
+    .story-btn:hover {
+        background-color: rgba(247, 76, 76, 0.938);
+    }
+
+    .dropdown svg {
+        position: absolute;
+    }
+
+    p {
+        color: gray;
+    }
+
+    strong {
+        color: #3D405B;
+        ;
+    }
+
+    .image img:hover {
+        transform: scale(1.2);
+    }
+
+    .image {
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+</style>
+
+<body>
+    <main>
+        <nav class="nav-bar">
+            <div class="container">
+                <div class="left-up">
+                    <div class="logo">
+                        <a>
+                            <img src="logo.png">
+                            <span>Tiya
+                                <small>
+                                    Golf club
+                                </small>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-up">
+                    <div class="menu-acses">
+                        <div class="list">
+                            <ul class="menu-header">
+                                <li>
+                                    <a class="active" href="#home">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#about">About</a>
+                                </li>
+                                <li>
+                                    <a href="#Membership">Membership</a>
+                                </li>
+                                <li>
+                                    <a href="#Events">Events</a>
+                                </li>
+                                <li>
+                                    <a href="#contact-us">contact us</a>
+                                </li>
+                                <li>
+                                    <div class="dropdown">
+                                        <a href="#Pages">Pages</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                        <ul class="dropdown-menu">
+
+                                            <i class="bi bi-chevron-down"></i>
+                                            <li>
+                                                <a>Events listing</a>
+                                            </li>
+                                            <li>
+                                                <a class="active">Events Detail</a>
+                                            </li>
+                                        </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-btn">
+                    <button class="btn-logoo">
+                        Member Login
+                    </button>
+                </div>
+            </div>
+            </div>
+        </nav>
+
+        <section class="section">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style=" position: absolute;
+            right: 0;
+            left: 0;
+            margin-bottom: 374px;
+
+            ">
+                <path fill="#3D405B" fill-opacity="1"
+                    d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
+                </path>
+            </svg>
+            <div class="sec">
+                <div class="content">
+                    <div>
+                        <h2 class="text-white">Event Detail.</h2>
+                        <button class="story-btn">
+                            learn more
+                        </button>
+                        </h1>
+                    </div>
+                </diV>
+
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style=" margin-top: 429px;">
+                <path fill="#ffffff" fill-opacity="1"
+                    d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+                </path>
+            </svg>
+        </section>
+        <div style="width: 100%;  display: flex; flex-direction: column;
+        align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 190vh;
+    margin-bottom: 40px;">
+            <div style="padding: 4%;">
+                <h1>
+                    Tiya Club's Group Tournaments
+                </h1>
+            </div>
+            <div class="image">
+                <img src="professional-golf-player.jpg" style="
+                    width: 571px;
+                    height: 357px;
+                    border-radius: 25px;">
+
+            </div>
+            <div style="padding-top: 2%;">
+                <h2 style="text-align: center; color: black; font-size: 28px;">
+                    Golf Club based in Orlando
+                </h2>
+                <p style="    line-height: 29px;
+                padding: 0% 34%;
+                color: gray;
+                font-family: Arial;
+                font-size: 16px;
+                padding-bottom: 13px;">
+                    Tiya Golf Club is Bootstrap v5.3.0 HTML CSS template for your golf related websites. Anyone can
+                    download, edit and use this layout for commercial purposes.
+                    <br><br>
+                    Tiya is 100% free CSS template provided by TemplateMo website. Please tell your friends about our
+                    website. Thank you for visiting.
+                </p>
+            </div>
+            <div style="background-color: #F4F1DE;; width: 420px; height: 200px; display: flex;
+            border-radius: 20px;
+            flex-direction: column;">
+                <div style="    padding-left: 10%;
+                padding-top: 12%;">
+                    Event Detail
+                </div>
+                <div style="display: flex; flex-direction: row; padding: 13px 10%;">
+                    <div>
+                        <span>
+                            <strong> Date:</strong>
+
+                        </span>
+                        <p style="color: gray;">
+
+                            18 Mar 2048
+                        </p>
+
+                    </div>
+                    <div style="    margin: 0 68px;">
+                        <span> <strong> Location:</strong>
+                        </span>
+                        <p> Tiya Golf Club</p>
+
+                    </div>
+                    <div>
+                        <span>
+                            <strong> Ticket:</strong>
+
+                        </span>
+                        <p> $150</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="    width: 50%;
+        display: flex;
+        height: 100%;
+        margin-left: 5%;
+        justify-content: flex-start;
+        align-items: center;">
+            <div style=" position: absolute;
+            overflow: hidden;
+            left: 42%;
+            text-align: center; border-radius: 20px;
+            background-color: #3D405B;; ">
+                <div class="contact-info-body" style="    padding: 20px 30px;">
+                    <strong>London, United Kingdom</strong>
+
+                    <p class="mt-2 mb-1" style="padding: 12px;">
+                        <a href="tel: 010-020-0340" class="contact-link">
+                            (020)
+                            010-020-0340
+                        </a>
+                    </p>
+
+                    <p class="mb-0">
+                        <a href="mailto:info@company.com" class="contact-link">
+                            info@company.com
+                        </a>
+                    </p>
+                </div>
+                <div class="contact-info-footer">
+                    <a href="#">Directions</a>
+                </div>
+            </div>
+
+            <img src="WorldMap.svg" class="img-fluid" alt="" style="width: 413PX;  margin-left: 56%;
+            ">
+        </div>
+        <footer>
+            <div style="display: flex; width: 80%;
+            flex-direction: row;">
+                <div class="right" style="width: 50%;
+                height: 100%; margin-top: 5%;" 4>
+                    <div class="logo2">
+
+                        <a>
+                            <img src="logo.png" style="width: 50px; height: 50px;">
+                            <span style="color: black;">Tiya
+                                <small>
+                                    Golf club
+                                </small>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="left" style="display:flex; flex-direction: row;">
+                    <div style="padding: 10px;">
+                        <h5 class="site-footer-title mb-4" style="padding: 20px 0; font-size: 20px;">Join Us</h5>
+
+                        <p style="border-bottom: 1px solid gray;padding-bottom: 17px; color: gray;">
+                            <span>Mon-Fri</span>
+                            6:00 AM - 6:00 PM
+                        </p>
+
+                        <p style="padding-top: 10px;  color: gray;">
+                            <span>Sat-Sun</span>
+                            6:30 AM - 8:30 PM
+                        </p>
+                        <br>
+                        <p class="copyright-text" style="padding-top: 20px;  color: gray;">Copyright © 2048 Tiya Golf
+                            Club
+                        </p>
+                    </div>
+                    <div class="icon" style="width: 205px;
+                    padding: 104px 80px;
+                    height: 50px;">
+                        <ul class="social-icon" style="list-style-type: none; display: flex; flex-direction: row;">
+                            <li style="padding: 0 10px; 
+                        
+                                margin: 10px;
+                                width: 33px;
+                                background-color: black;
+                                margin: 10px;
+                                border-radius: 97%;
+                                height: 25px;
+                                padding: 5px 10px;">0
+                                <i class="fa fa-twitter " style="color:black;"></i>
+                            </li>
+
+                            <li class="social-icon-item" style="padding: 0 10px;     width: 33px;
+                            background-color: black;
+                            margin: 10px;
+                            border-radius: 97%;
+                            height: 25px;
+                            padding: 5px 10px;
+                        ">
+                                <i class="fa fa-instagram " style="color:black;"></i>
+                            </li>
+
+                            <li class="social-icon-item" style="padding: 0 10px;     width: 33px;
+                            background-color: black;
+                            margin: 10px;
+                            border-radius: 97%;
+                            height: 25px;
+                            padding: 5px 10px;
+                        ">
+
+                                <i class="fa fa-whatsapp" style=" color: black;"></i>
+
+                            </li>
+                        </ul>
+                        <p class="copyright-text">Design: <a style="color: black;" rel="nofollow"
+                                href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#81B29A" fill-opacity="1"
+                d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+            </path>
+        </svg>
+</body>
+
+</html>
